@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">RPNCalculator</string>
+
+    <string name="stackInd4">4\n3\n2\n➞</string>
+    <string name="stackInd3">3\n2\n\n➞</string>
+    <string name="stackInd2">2\n\n\n➞</string>
+
+    <string name="drop">DROP</string>
+    <string name="swap">SWAP</string>
+    <string name="ac">AC</string>
+    <string name="undo">⌫</string>
+    <string name="enter">ENTER</string>
+
+    <string name="power">^</string>
+    <string name="squareRoot">√</string>
+    <string name="multiplication">×</string>
+    <string name="division">÷</string>
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+    <string name="changeSign">+/-</string>
+
+    <string name="zero">0</string>
+    <string name="one">1</string>
+    <string name="two">2</string>
+    <string name="three">3</string>
+    <string name="four">4</string>
+    <string name="five">5</string>
+    <string name="six">6</string>
+    <string name="seven">7</string>
+    <string name="eight">8</string>
+    <string name="nine">9</string>
+    <string name="dot">.</string>
+
+    <string name="settings">Settings</string>
+    <string name="bgColor">Choose stack background color:</string>
+    <string name="green">Green</string>
+    <string name="blue">Blue</string>
+    <string name="white">White</string>
+    <string name="stackDisplay">RPN Stack Display:</string>
+    <string name="rows2">2 Rows</string>
+    <string name="rows3">3 Rows</string>
+    <string name="rows4">4 Rows</string>
+    <string name="round">Round numbers in a stack to X decimal places:</string>
+    <string name="decimal2">2 Decimal places</string>
+    <string name="decimal3">3 Decimal places</string>
+    <string name="decimal4">4 Decimal places</string>
+    <string name="apply">Apply</string>
+
+    <string name="author">© 2022 Mikołaj Krakowiak All Rights Reserved</string>
+
+    <string name="errorMultipleDecimalPoints">Error: Cannot enter multiple decimal points</string>
+    <string name="errorAddition">Error: You need at least 2 values on stack to perform addition!</string>
+    <string name="errorSubtraction">Error: You need at least 2 values on stack to perform subtraction!</string>
+    <string name="errorMultiplication">"Error: You need at least 2 values on stack to perform multiplication!"</string>
+    <string name="errorDivision">Error: You need at least 2 values on stack to perform division!</string>
+    <string name="errorInvalidPower">Error: Invalid power operation!</string>
+    <string name="errorPower">Error: You need at least 2 values on stack to perform power!</string>
+    <string name="errorSqrRoot">Error: The value under the square root must be positive!</string>
+    <string name="errorDivisionByZero">"Error: Division by zero is forbidden!"</string>
+
+
+</resources>

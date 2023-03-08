@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clStackDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:background="@color/green"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/tvStackId"
+            style="@style/stackTextview"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:lines="4"
+            android:text="@string/stackInd4"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvStack"
+            style="@style/stackTextview"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:lines="3"
+            android:maxLines="3"
+            android:textAlignment="textEnd"
+            app:layout_constraintBottom_toTopOf="@+id/tvWorking"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tvStackId"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvWorking"
+            style="@style/stackTextview"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/zero"
+            android:textAlignment="textEnd"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tvStackId"
+            app:layout_constraintTop_toBottomOf="@id/tvStack" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout style="@style/calcRow">
+
+        <Button
+            android:id="@+id/btnDrop"
+            style="@style/calcButton"
+            android:text="@string/drop"
+            android:textColor="@color/grey2"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/btnSwap"
+            style="@style/calcButton"
+            android:text="@string/swap"
+            android:textColor="@color/grey2"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/btnAllClear"
+            style="@style/calcButton"
+            android:text="@string/ac"
+            android:textColor="@color/grey2"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/btnUndo"
+            style="@style/calcButton"
+            android:layout_weight="2"
+            android:text="@string/undo" />
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/calcRow">
+
+        <Button
+            android:id="@+id/btn7"
+            style="@style/calcButton"
+            android:text="@string/seven" />
+
+        <Button
+            android:id="@+id/btn8"
+            style="@style/calcButton"
+            android:text="@string/eight" />
+
+        <Button
+            android:id="@+id/btn9"
+            style="@style/calcButton"
+            android:text="@string/nine" />
+
+        <Button
+            android:id="@+id/btnPower"
+            style="@style/calcButton"
+            android:text="@string/power" />
+
+        <Button
+            android:id="@+id/btnRoot"
+            style="@style/calcButton"
+            android:text="@string/squareRoot" />
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/calcRow">
+
+        <Button
+            android:id="@+id/btn4"
+            style="@style/calcButton"
+            android:text="@string/four" />
+
+        <Button
+            android:id="@+id/btn5"
+            style="@style/calcButton"
+            android:text="@string/five" />
+
+        <Button
+            android:id="@+id/btn6"
+            style="@style/calcButton"
+            android:text="@string/six" />
+
+        <Button
+            android:id="@+id/btnMultiplication"
+            style="@style/calcButton"
+            android:text="@string/multiplication" />
+
+        <Button
+            android:id="@+id/btnDivision"
+            style="@style/calcButton"
+            android:text="@string/division" />
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/calcRow">
+
+        <Button
+            android:id="@+id/btn1"
+            style="@style/calcButton"
+            android:text="@string/one" />
+
+        <Button
+            android:id="@+id/btn2"
+            style="@style/calcButton"
+            android:text="@string/two" />
+
+        <Button
+            android:id="@+id/btn3"
+            style="@style/calcButton"
+            android:text="@string/three" />
+
+        <Button
+            android:id="@+id/btnAddition"
+            style="@style/calcButton"
+            android:text="@string/plus" />
+
+        <Button
+            android:id="@+id/btnSubtraction"
+            style="@style/calcButton"
+            android:text="@string/minus" />
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/calcRow">
+
+        <Button
+            android:id="@+id/btn0"
+            style="@style/calcButton"
+            android:text="@string/zero"
+            tools:ignore="DuplicateSpeakableTextCheck" />
+
+        <Button
+            android:id="@+id/btnChangeSign"
+            style="@style/calcButton"
+            android:text="@string/changeSign" />
+
+        <Button
+            android:id="@+id/btnDot"
+            style="@style/calcButton"
+            android:text="@string/dot" />
+
+        <Button
+            android:id="@+id/btnEnter"
+            style="@style/calcButton"
+            android:layout_weight="2"
+            android:text="@string/enter" />
+
+    </LinearLayout>
+
+</LinearLayout>

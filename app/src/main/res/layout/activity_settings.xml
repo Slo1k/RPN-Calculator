@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsActivity">
+
+
+    <TextView
+        android:id="@+id/tvSettings"
+        style="@style/settingsTextview"
+        android:layout_marginTop="15dp"
+        android:text="@string/settings"
+        android:textSize="35sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvBgColor"
+        style="@style/settingsTextview"
+        android:layout_marginTop="35dp"
+        android:text="@string/bgColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSettings" />
+
+
+    <RadioGroup
+        android:id="@+id/rgColors"
+        style="@style/settingsRadioGroup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvBgColor">
+
+        <RadioButton
+            android:id="@+id/rbGreen"
+            style="@style/settingsRadioButton"
+            android:checked="true"
+            android:text="@string/green" />
+
+        <RadioButton
+            android:id="@+id/rbBlue"
+            style="@style/settingsRadioButton"
+            android:text="@string/blue" />
+
+        <RadioButton
+            android:id="@+id/rbWhie"
+            style="@style/settingsRadioButton"
+            android:text="@string/white" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tvStackDisplay"
+        style="@style/settingsTextview"
+        android:layout_marginTop="30dp"
+        android:text="@string/stackDisplay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rgColors" />
+
+    <RadioGroup
+        android:id="@+id/rgStack"
+        style="@style/settingsRadioGroup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvStackDisplay">
+
+        <RadioButton
+            android:id="@+id/rbLevel4"
+            style="@style/settingsRadioButton"
+            android:checked="true"
+            android:text="@string/rows4" />
+
+        <RadioButton
+            android:id="@+id/rbLevel3"
+            style="@style/settingsRadioButton"
+            android:text="@string/rows3" />
+
+        <RadioButton
+            android:id="@+id/rbLevel2"
+            style="@style/settingsRadioButton"
+            android:text="@string/rows2" />
+
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tvRound"
+        style="@style/settingsTextview"
+        android:layout_marginTop="30dp"
+        android:text="@string/round"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rgStack" />
+
+
+    <RadioGroup
+        android:id="@+id/rgRound"
+        style="@style/settingsRadioGroup"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvRound">
+
+        <RadioButton
+            android:id="@+id/rbRound2"
+            style="@style/settingsRadioButton"
+            android:checked="true"
+            android:text="@string/decimal2" />
+
+        <RadioButton
+            android:id="@+id/rbRound3"
+            style="@style/settingsRadioButton"
+            android:text="@string/decimal3" />
+
+        <RadioButton
+            android:id="@+id/rbRound4"
+            style="@style/settingsRadioButton"
+            android:text="@string/decimal4" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnApply"
+        style="@style/calcButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:text="@string/apply"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rgRound" />
+
+    <TextView
+        style="@style/settingsTextview"
+        android:layout_marginBottom="15dp"
+        android:text="@string/author"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
